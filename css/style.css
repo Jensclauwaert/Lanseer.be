@@ -35,16 +35,17 @@ grid-column-end: 3;
 }
 
 .homeNav {
-  grid-column-start: 4;
-  grid-column-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 5;
   align-self: center;
+  text-align: right;
 }
 
 .homeNav li {
   display: inline;
   font-size: 16px;
   font-weight: 600;
-  margin-right: 10%;
+  margin-right: 5%;
 
 
 }
@@ -52,6 +53,11 @@ grid-column-end: 3;
 text-decoration: none;
 color: rgba(0,0,0,0.8);
 
+}
+
+.homeNav img {
+  width: 20px;
+  display: inline;
 }
 
 .bannerImg {
@@ -1125,5 +1131,14 @@ max-width: 98%;
   font-weight: 600;
   border: none;
   justify-self : center;
+
+}
+
+.msgTitle{
+
+    font-size: 25px;
+    color: #000D43;
+    font-weight: 700;
+    margin-bottom: 30px;
 
 }
