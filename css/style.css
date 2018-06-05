@@ -100,6 +100,11 @@ color: #000D43;
   width: 75%;
   margin-top: 10px;
 }
+#logo {
+  width: 100px;
+  height: auto;
+  padding-left: 20px;
+}
 }
 @media screen and (max-width: 450px) {
 .homeButtons{
@@ -168,6 +173,16 @@ table-layout: fixed;
   width: 140px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+}
+@media screen and (max-width:400px)  {
+.homeButtons{
+  width: 90%;
+  margin-top: 30px;
+}
+.homeButtons li {
+  width: 120px;
+
 }
 }
 
@@ -283,6 +298,8 @@ padding-right: 5%;
     padding-right: 0px;
   }
 }
+
+
 .counterContainer{
   box-sizing: border-box;
   display: grid;
@@ -755,7 +772,7 @@ margin-bottom: 30px;
   color: #000D43;
 }
 .opdrachtTags{
-  margin-top: 20px;
+padding-top: 20px;
 }
 
 .opdrachtTags li {
@@ -796,6 +813,98 @@ margin-bottom: 30px;
 
 .opdrachtlijst div:last-child::after{
   border-bottom: none;
+}
+@media screen and (max-width:600px){
+  .zoekVensterO {
+
+  }
+  .zoekColO1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 20px;
+  }
+  .zoekColO2{
+    grid-column-start: 1;
+    grid-column-end: 4;
+        margin-bottom: 20px;
+  }
+  .zoekColO3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+.zoekVensterO input {
+  padding-left: 2%;
+  width: 98%;
+}
+
+.zoekVensterO select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1000px){
+.opdrachtenWrap{
+  width: 100%;
+}
+.opdrachtenTitle{
+  margin-left: 20px;
+}
+}
+@media screen and (max-width:700px){
+.opdrachtenWrap {
+  margin-top: 30px;
+}
+
+  .opdrachtStuk{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 1fr;
+  margin-bottom: 30px;
+  text-align: center;
+
+  }
+  .opdrachtDesc {
+    grid-column-start: 1;
+    grid-column-end: 2;
+padding-left: 0px;
+padding-right: 0px;
+margin-bottom: 30px;
+  }
+  .opdrachtRest{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    color: #000D43;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .opdrachtImg img{
+    width: 30%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .opdrachtlijst {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+  }
+.zoekVensterO {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.breedlijn{
+  grid-column-start: 1;
+  grid-column-end: 7;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.opdrachtTags li {
+  margin-bottom: 20px;
+}
 }
 .socialicons {
   display: grid;
