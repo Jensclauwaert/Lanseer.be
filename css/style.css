@@ -840,6 +840,9 @@ padding-top: 20px;
 .zoekVensterO select {
     width: 100%;
   }
+  .submitO{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width:1000px){
@@ -943,6 +946,19 @@ margin-bottom: 30px;
   margin-top: 10px;
   margin-right: 10px;
 }
+@media screen and (max-width:700px){
+  .freelanceRest {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    padding-left: 0px;
+  }
+  .freelanceRest input {
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+}
+
 
 .coverfoto {
   width: 100%;
@@ -1427,5 +1443,162 @@ max-width: 98%;
     color: #000D43;
     font-weight: 700;
     margin-bottom: 30px;
+}
 
+.bloglijst {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-bottom: 50px;
+}
+.blogstuk{
+  border: 1px solid rgba(112, 112, 112, 0.25);
+  background-color: white;
+  height: 350px;
+}
+
+.bloglijst img {
+  width: 100%;
+}
+
+.bloglijst h1 {
+  font-size: 20px;
+  color: #000D43;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+
+}
+
+.bloglijst p {
+  color: #000D43;
+    line-height: 1.3;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+  font-size: 12px;
+  }
+
+.bloglijst .opdrachtTags{
+  margin-left: 15px;
+}
+
+@media screen and (max-width:1000px){
+
+.msgTitle{
+margin-left: 20px;
+}
+.messageDesc{
+}
+}
+
+@media screen and (max-width:1000px){
+  .profielInfo,.portfolio,.recensies {
+    width: 100%;
+  }
+  .rDesc {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    padding-left: 10%;
+}
+.proffretitle, .proffre {
+  width: 100%;
+}
+.proffretitle{
+  margin-left: 20px;
+}
+}
+
+@media screen and (max-width:700px){
+  .profielLinks {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+.profielBesc {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+
+}
+.portfolio {
+  grid-template-columns: 1fr 1fr;
+}
+
+.rTags{
+line-height: 2;
+}
+.proffre {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.proffrecol1, .proffrecol2{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.freeimgwrap{
+  margin: 0 auto;
+}
+
+}
+@media screen and (max-width:400px){
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width:500px){
+  .profop{
+    width: 100%;
+  }
+  .profoptitle{
+    margin-left: 20px;
+  }
+  .loginmid{
+    width: 100%;
+  }
+}
+
+.wrap2 {
+  margin-top: -40px;
+
+}
+
+.wrap2 textarea {
+  display: block;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  min-height: 150px;
+  border: 1px solid rgba(112, 112, 112, 0.25);
+  margin-bottom: 10px;
+}
+
+.wrap2 .submit{
+  width: 200px;
+  background-color: #22A7F0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 2px;
+  color:white;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  justify-self: end;
+  margin-top: 10px;
+}
+
+@media screen and (max-width:700px){
+.opdrachtlijst{
+  margin-bottom: 0px;
+}
 }
