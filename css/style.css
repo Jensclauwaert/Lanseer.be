@@ -772,7 +772,7 @@ margin-bottom: 30px;
   color: #000D43;
 }
 .opdrachtTags{
-padding-top: 20px;
+margin-top: 20px;
 }
 
 .opdrachtTags li {
@@ -1081,6 +1081,14 @@ margin-top: 10px;
 font-size: 16px;
 font-weight: 300;
 }
+.pcounter4 img{
+  width: 15px;
+  display: inline;
+}
+
+.pcounter4 .pcounterNumb {
+  display: inline !important;
+}
 
 .portfolio {
   width: 75%;
@@ -1094,10 +1102,38 @@ font-weight: 300;
 
 .portfolio .portImg {
   position: relative;
-  background-image: url("../img/website.png");
   box-sizing: border-box;
   border: 5px solid white;
+  background-size: cover;
+  transition: all 0.75s ease;
 }
+
+.portImg:nth-child(1){
+  background-image: url("../img/ex1.jpg");
+}
+.portImg:nth-child(2){
+  background-image: url("../img/ex2.jpg");
+}
+.portImg:nth-child(3){
+  background-image: url("../img/ex3.jpg");
+}
+.portImg:nth-child(4){
+  background-image: url("../img/ex4.jpg");
+}
+.portImg:nth-child(5){
+  background-image: url("../img/ex5.jpg");
+}
+.portImg:nth-child(6){
+  background-image: url("../img/ex6.jpg");
+}
+.portImg:nth-child(7){
+  background-image: url("../img/ex7.jpg");
+}
+.portImg:nth-child(8){
+  background-image: url("../img/ex8.jpg");
+}
+
+
 .portfolio .portImg:before{
 	content: "";
 	display: block;
@@ -1597,8 +1633,145 @@ line-height: 2;
   margin-top: 10px;
 }
 
+.hiddenNav{
+  transition: all 0.75s ease;
+}
+
+.spec li,.spec a,.spec ul {
+  display: inline !important;
+  }
+
 @media screen and (max-width:700px){
 .opdrachtlijst{
   margin-bottom: 0px;
 }
+.zoekColO3 .submitO {
+  width: 100%;
+}
+}
+
+@media screen and (max-width:800px){
+.bloglijst{
+  grid-template-columns: 1fr 1fr;
+}
+.blogstuk{
+  height: 375px;
+}
+}
+.hiddenNav {
+  display: none;
+
+}
+@media screen and (max-width:500px){
+.bloglijst{
+  grid-template-columns: 1fr;
+}
+}
+
+.hamburger{
+display: none !important;
+opacity: 0.7;
+margin-right: 10px;
+}
+
+.hamburgerhid {
+  display: none;
+}
+
+
+@media screen and (max-width:760px){
+
+
+.homeNav ul li {
+    display: none
+  }
+  .hamburger, .homeNav ul li:last-child{
+    display: inline-block !important;
+  }
+
+
+.hiddenNav{
+  position: absolute;
+  display: block;
+  background-color:rgba(34, 167, 240, 0.98) ;
+  z-index: 25;
+  height: 0vh;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+
+ transition: all 0.75s ease;
+ -webkit-transition: all 0.75 ease;
+ overflow: hidden;
+
+
+}
+.hiddenNav ul {
+    margin-top: 150px;
+    line-height: 1.7;
+}
+
+.hiddenNav a{
+  color: white;
+}
+
+
+.hamburgerhid{
+  display: inline-block;
+position: absolute;
+
+right: 20px;
+top: 40px;
+  width: 20px;
+}
+.hiddenNav img {
+  width: 20px;
+}
+.pers img{
+  margin-top: 30px;
+  width: 30px;
+}
+.pers:first-child img {
+margin-right: 30px;
+}
+.pers:last-child img {
+margin-left: 30px;
+}
+
+}
+
+@media screen and (max-width:450px){
+
+.bannerImg {
+  height: 100vw;
+  background-image: url("../img/homebanner@2x.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bannerImg img {
+  display: none;
+}
+
+.midtext p{
+  font-weight: 400;
+  line-height: 1.3;
+  font-size: 20px;
+}
+
+.loginpage{
+
+  background-color: white;
+  background-image: none;
+}
+.loginmid{
+  border: none;
+}
+
+}
+@media screen and (min-width:760px){
+  .hiddenNav{
+    display: none !important;
+  }
 }
