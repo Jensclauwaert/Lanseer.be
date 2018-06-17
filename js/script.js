@@ -15,8 +15,6 @@ closed.onclick = function(){
 
   };
 
-
-  console.log('jensisking');
 }
 
 

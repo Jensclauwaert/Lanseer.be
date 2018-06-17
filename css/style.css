@@ -1775,3 +1775,13 @@ margin-left: 30px;
     display: none !important;
   }
 }
+
+.open {
+  color: green !important;
+  border: 1px solid green !important;
+}
+
+.dicht{
+  color: red !important;
+  border: 1px solid red !important;
+}
